@@ -6,4 +6,111 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title Landing Page
 	body
-		h1 Landing Pages
+		header.header
+			.logo
+				img(src="", alt="").logo__image
+
+			nav.main-nav.nav
+				ul.main-menu
+					li.main-menu__item: a(href="#features")  Features
+					li.main-menu__item: a(href="#faqs")  FAQS
+					li.main-menu__item: a(href="#contact")  Contact
+				button#login-button.button.login-button Login
+
+			section.section.section--first
+				article.section
+					h1.section__title A Simple Bookmark Manager
+					p.section__text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+					button.section__button.button Get i on Chrome
+					button.section__button.button Get i on Firefox
+				.section
+					img(src="", alt="")
+
+			section#features.section.section--second
+				h2.section__subtitle Features
+				p.section__text Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+				ul.tabs
+					li.tabs__item Simple Bookmarking
+						article.tabs__content
+							img(src="", alt="")
+							h2.tabs__title Bookmark in one click
+							p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how your manage your favourite sites.
+							button.button More Info
+					li.tabs__item Speedy Searching
+						article.tabs__content
+							img(src="", alt="")
+							h2.tabs__title Intelligent search
+							p.tabs__text Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+							button.button More Info
+
+					li.tabs__item Easy Sharing
+						article.tabs__content
+							img(src="", alt="")
+							h2.tabs__title Share your bookmarks
+							p.tabs__text Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+							button.button More Info
+
+			section#download.section.section--third
+				h2.section__subtitle Download the extension
+				p.section__text We've got more browsers in the pipeline. Please do let us know if you-ve got favourite your'd like us to prioritize.
+
+				article.browser-card
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					h3.browser-card__title Add to Chrome
+					p.browser-card__description Minumun version 62
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					button.button Add & install Extension
+
+				article.browser-card
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					h3.browser-card__title Add to Firefox
+					p.browser-card__description Minumun version 55
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					button.button Add & install Extension
+
+				article.browser-card
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					h3.browser-card__title Add to Opera
+					p.browser-card__description Minumun version 46
+					.browser-card__image-container
+						img(src="", alt="").browser-card__image
+					button.button Add & install Extension
+
+			section#faqs.section.section--fourth
+				h2.section__subtitle Frenquently asked Questions
+				p.section__text Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+				.accordion
+					.accordion__item
+						h3.accordion__title What is Bookmark
+						p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
+
+					.accordion__item
+						h3.accordion__title How can I request a new browser?
+						p.accordion__text Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies no ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+					.accordion__item
+						h3.accordion__title What is Bookmark
+						p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
+
+					button.button More info
+
+			footer.footer
+				h3.footer__title
+				p.footer__text
+				form(action="#").form#form
+					input(type="email" placeholder='Enter your email address').form__input
+					button.button Contact Us
+			nav.footer-nav.nav
+				ul.main-menu
+					li.main-menu__item: a(href="#features")  Features
+					li.main-menu__item: a(href="#faqs")  FAQS
+					li.main-menu__item: a(href="#contact")  Contact
+				.social-networks
+					a(href="#"): i.fa.fa-facebook
+					a(href="#"): i.fa.fa-twitter
+
