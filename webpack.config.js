@@ -35,12 +35,12 @@ module.exports = {
 			scriptLoading: "blocking",
 		}),
 		new MiniCssExtractPlugin({
-			filename: 'styles.css'
+			filename: 'css/styles.css'
 		}),
 	],
 	// Output point
 	output: {
 		path: path.join( basePath, distPath),
-		filename: "scripts.js"
+		filename: "js/scripts.js"
 	}
 }

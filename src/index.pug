@@ -4,19 +4,27 @@ html(lang="es")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet")
 		title Landing Page
 	body
 		header.header
+			//- .top-bar
+
 			.logo
-				img(src="", alt="").logo__image
+				img(src="./assets/images/logo-bookmark.svg", alt="").logo__image
+
+			img(src="./assets/images/icon-hamburger.svg", alt="Icon menu")#icon-menu.top-bar__hamburger
 
 			nav.main-nav.nav
 				ul.main-menu
-					li.main-menu__item: a(href="#features")  Features
-					li.main-menu__item: a(href="#faqs")  FAQS
-					li.main-menu__item: a(href="#contact")  Contact
+					li.main-menu__item: a(href="#features").main-menu__link  Features
+					li.main-menu__item: a(href="#faqs").main-menu__link  FAQS
+					li.main-menu__item: a(href="#contact").main-menu__link  Contact
 				button#login-button.button.login-button Login
 
+		main.main
 			section.section.section--first
 				article.section
 					h1.section__title A Simple Bookmark Manager
@@ -99,18 +107,19 @@ html(lang="es")
 
 					button.button More info
 
-			footer.footer
-				h3.footer__title
-				p.footer__text
-				form(action="#").form#form
-					input(type="email" placeholder='Enter your email address').form__input
-					button.button Contact Us
-			nav.footer-nav.nav
-				ul.main-menu
-					li.main-menu__item: a(href="#features")  Features
-					li.main-menu__item: a(href="#faqs")  FAQS
-					li.main-menu__item: a(href="#contact")  Contact
-				.social-networks
-					a(href="#"): i.fa.fa-facebook
-					a(href="#"): i.fa.fa-twitter
+		footer.footer
+			h3.footer__title
+			p.footer__text
+			form(action="#").form#form
+				input(type="email" placeholder='Enter your email address').form__input
+				button.button Contact Us
+
+		nav.footer-nav.nav
+			ul.main-menu
+				li.main-menu__item: a(href="#features")  Features
+				li.main-menu__item: a(href="#faqs")  FAQS
+				li.main-menu__item: a(href="#contact")  Contact
+			.social-networks
+				a(href="#"): i.fa.fa-facebook
+				a(href="#"): i.fa.fa-twitter
 
