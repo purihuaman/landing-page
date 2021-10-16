@@ -1,0 +1,18 @@
+
+.browser-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 8px;
+	box-shadow: 0 3px 10px 5px rgba($soft-blue, .17);
+	margin-bottom: 3rem;
+	padding: 3rem 1.5rem 1.5rem;
+
+	&__description {
+		color: var(--grayish-blue)
+	}
+
+	.button {
+		margin-top: 1.5rem;
+	}
+}

@@ -1,8 +1,7 @@
 .header {
-	background-color: red;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: space-between;
+	grid-template-columns: 90% 10%;
 	align-items: center;
-	padding: 1em;
+	width: 100%;
+	padding: 1rem;
 }

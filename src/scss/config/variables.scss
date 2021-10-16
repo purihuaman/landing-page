@@ -2,9 +2,12 @@
 	--main-font: 'Rubik', sans-serif;
 
 	// Colors
-	--bg-color: #FBFBFE;
+	--white: #FBFBFE;
+	--white-soft: #ffffff44;
+	--dirt-white: #f7f7f7;
 	--soft-blue: hsl(231, 69%, 60%);
 	--soft-red: hsl(0, 94%, 66%);
-	--grayish--blue: hsl(229, 8%, 60%);
+	--grayish-blue: hsl(229, 8%, 60%);
 	--very-dark-blue: hsl(229, 39%, 21%);
 }
+$soft-blue: hsl(231, 69%, 60%);

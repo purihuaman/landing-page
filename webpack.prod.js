@@ -52,7 +52,7 @@ module.exports = {
 	],
 	// Output point
 	output: {
-		clean: false,
+		clean: true,
 		path: path.join( basePath, publicPath),
 		filename: "js/scripts.js"
 	}

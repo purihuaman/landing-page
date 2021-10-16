@@ -1,0 +1,30 @@
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	padding: 0 0.5rem;
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+.button {
+	background: none;
+	border: none;
+	outline: none;
+	padding: .75rem 1rem;
+	border-radius: 8px;
+	font-weight: 300;
+	cursor: pointer;
+	width: 100%;
+
+	&--purple {
+		background-color: var(--soft-blue);
+		color: var(--white);
+	}
+	
+	&--white {
+		background-color: var(--dirt-white);
+		color: var(--very-dark-blue);
+		box-shadow: 5px 5px 15px #ccc;
+	}
+}

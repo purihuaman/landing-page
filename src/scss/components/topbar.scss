@@ -6,9 +6,18 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 10;
-	padding: 1rem;
-	filter: invert(1) brightness(100);
-
+	z-index: 100;
+	padding: 2rem;
+	background-color:var(--white);
+	
 	&__logo {}
+	
+	&--active {
+		filter: invert(1) brightness(100);
+		background-color: initial;
+
+		& .top-bar__icon {
+			filter: invert(1) brightness(100);
+		}
+	}
 }

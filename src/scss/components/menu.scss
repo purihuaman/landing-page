@@ -1,13 +1,24 @@
 .nav {}
 .main-nav {
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	top: 0;
 	left: 0;
+	z-index: 10;
 	background-color: var(--very-dark-blue);
 	opacity: .98;
-	padding-top: 4rem;
+	padding: 6rem 2rem 0 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform .3s;
+	transform: translateY(-100%);
+	
+	&--active {
+		transform: translateY(0);
+	}
 }
 
 .main-menu {
@@ -20,24 +31,25 @@
 	text-align: center;
 
 	&__item {
-		padding: 1rem;
-		margin: .5em;
-		border: 1px solid var(--white);
+		padding: 1rem 0;
+		margin: 0 .5rem 0;
+		border: 1px solid var(--grayish--blue);
 		border-left: none;
 		border-right: none;
 		border-bottom: none;
 		
 		&:last-child {
-			border-bottom: 1px solid var(--white);
+			border-bottom: 1px solid var(--grayish--blue);
+			border-bottom: 2rem;
 		}
 	}
 
 	&__link {
 		text-decoration: none;
-		color: var(--bg-color);
+		color: var(--white);
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		font-weight: 300;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 }
