@@ -40,26 +40,32 @@ html(lang="es")
 			section#features.section.section--second
 				h2.section__title Features
 				p.section__text Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
-				ul.tabs
-					li.tabs__item Simple Bookmarking
-						article.tabs__content
-							img(src="", alt="")
-							h2.tabs__title Bookmark in one click
-							p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how your manage your favourite sites.
-							button.button More Info
+				ul#tabs.tabs
+					li.tabs__item.tabs__item--active Simple Bookmarking
 					li.tabs__item Speedy Searching
-						article.tabs__content
-							img(src="", alt="")
-							h2.tabs__title Intelligent search
-							p.tabs__text Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-							button.button More Info
-
 					li.tabs__item Easy Sharing
-						article.tabs__content
-							img(src="", alt="")
-							h2.tabs__title Share your bookmarks
-							p.tabs__text Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
-							button.button More Info
+
+				.tabs__container
+					article.tabs__content.tabs__content--active
+						.tabs__img--container
+							img(src="./assets/image/illustration-features-tab-1.svg", alt="").tabs_img
+						h2.tabs__title Bookmark in one click
+						p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how your manage your favourite sites.
+						button.button.button--purple More Info
+
+					article.tabs__content
+						.tabs__img--container
+							img(src="./assets/image/illustration-features-tab-2.svg", alt="").tabs_img
+						h2.tabs__title Intelligent search
+						p.tabs__text Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+						button.button.button--purple More Info
+					
+					article.tabs__content
+						.tabs__img--container
+							img(src="./assets/image/illustration-features-tab-3.svg", alt="").tabs_img
+						h2.tabs__title Share your bookmarks
+						p.tabs__text Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+						button.button.button--purple More Info
 
 			section#download.section.section--third
 				h2.section__subtitle Download the extension
@@ -97,7 +103,10 @@ html(lang="es")
 				p.section__text Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
 				.accordion
 					.accordion__item
-						h3.accordion__title What is Bookmark
+						.accordion__header
+							h3.accordion__title What is Bookmark
+							img(src="./assets/image/icon-arrow.svg", alt="").accordion__image
+
 						p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
 
 					.accordion__item
