@@ -1,8 +1,8 @@
-const tabs = (( doc ) => {
-	const tabs = doc.getElementById('tabs');
+const tabs = ( ) => {
+	const tabs = document.getElementById('tabs');
 	// const tabsItem = [...doc.querySelectorAll('.tabs__item')] // para usar metodo ( map, etc)
-	const tabsItem = [...doc.querySelectorAll('.tabs__item')],
-				tabsContent = [...doc.querySelectorAll('.tabs__content')];
+	const tabsItem = [...document.querySelectorAll('.tabs__item')],
+				tabsContent = [...document.querySelectorAll('.tabs__content')];
 
 
 	tabs.addEventListener('click', ( event ) => {
@@ -23,4 +23,10 @@ const tabs = (( doc ) => {
 		}
 		
 	});
-})( document );
+}
+
+tabs()
+
+export {
+	tabs
+}

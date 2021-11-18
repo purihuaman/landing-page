@@ -1,0 +1,67 @@
+.form {
+	position: relative;
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin-bottom: 3.5rem;
+		
+	}
+
+	&__input {
+		height: 3rem;
+		width: 100%;
+		border: none;
+		outline: none;
+		padding-left: 1rem;
+		border-radius: .3rem;
+		font-family: inherit;
+		font-size: inherit;
+		position: relative;
+
+		
+		&:invalid {
+			box-shadow:  0 0 0 3px var(--soft-red);
+
+			& + .form__img {
+				display: block;
+				position: absolute;
+				right: 1rem;
+				top: .8rem;
+			}
+
+			
+		}
+	}
+	
+	&__img {
+		display: none;
+		
+		&::after {
+			content: '\0021';
+			display: block;
+			background-color: var(--soft-red);
+			width: 24px;
+			height: 24px;
+			text-align: center;
+			line-height: 24px;
+			border-radius: 50%;
+		}
+
+		&::before {
+			content: "Whoops, make sure it's an email";
+			position: absolute;
+			top: 2.32rem;
+			left: -16.2rem;
+			border-radius: .3rem;
+			background-color: var(--soft-red);
+			width: 100%;
+			min-width: 300px;
+			line-height: 2.5;
+		}
+	}
+
+
+}

@@ -1,0 +1,62 @@
+.accordion {
+	padding: 0 1.5rem;
+	
+	&__item {
+		&:last-child {
+			margin-bottom: 2rem;
+		}
+	}
+
+	
+	&__title {
+		font-weight: 300;
+		font-size: 1.1rem;
+		margin: 0;
+		padding: .5rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&::after {
+			content: '\2329';
+			font-weight: bold;
+			line-height: 1.8;
+			font-family: var(--main-font);
+			color: var(--soft-blue);
+			transition: transform .3s;
+			transform: rotate(-90deg);
+		}
+		
+		&--active::after {
+			transform: rotate(0);
+			color: crimson;
+		}
+	}
+	
+	&__text {
+		margin: 0;
+		height: auto;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .3s;
+		border-bottom: 1px solid var(--grayish-blue);
+
+		
+		&--active {
+			max-height: 500px;
+			overflow: auto;
+
+		}
+	}
+	
+	&__image {
+
+		transform: rotate(0);
+		transition: transform .3s, filter 0.2s;
+
+		&--active {
+			transform: rotate(180deg);
+			filter: hue-rotate(100deg);
+		}
+	}
+}

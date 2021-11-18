@@ -20,18 +20,22 @@ module.exports = {
 				use: [ { loader: "pug-loader", } ],
 			},
 			{
+				test: /\.(png|jpe?g|gif|webp|svg)$/i,
+				type: 'asset/resource',
+				generator: { filename: './src/assets/image/' },
+			},
+			{
 				test: /\.s[ac]ss$/i,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: { publicPath: path.relative(__dirname, '') }
+					},
 					"css-loader",
 					"postcss-loader",
 					"sass-loader",
 				],
 			},
-			{
-				test: /\.(png|jpe?g|gif|webp|svg)$/,
-				use: [ 'file-loader' ]
-			}
 		],
 	},
 	plugins: [
@@ -40,20 +44,20 @@ module.exports = {
 			filename: "./index.html",
 			scriptLoading: "blocking",
 		}),
-		new MiniCssExtractPlugin({
-			filename: 'css/styles.css'
-		}),
 		new CopyWebpackPlugin({
 			patterns: [
 				{ from: './src/assets/icons', to: 'assets/icons' },
 				{ from: './src/assets/image', to: 'assets/image' }
 			]
 		}),
+		new MiniCssExtractPlugin({
+			filename: 'css/styles.css'
+		}),
 	],
 	// Output point
 	output: {
 		clean: false,
 		path: path.join( basePath, publicPath),
-		filename: "js/scripts.js"
+		filename: "js/scripts.js",
 	}
 }

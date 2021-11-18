@@ -1,0 +1,29 @@
+.footer {
+	margin-top: 2rem;
+	padding: 3rem 2rem;
+	color: #fff;
+	text-align: center;
+	background-color: var(--soft-blue);
+
+	&__title {
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		font-size: 1.4rem;
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: var(--very-dark-blue);
+		padding: 2rem;
+		
+		& .logo {
+			filter: invert(1) brightness(100);
+		}
+	}
+
+}

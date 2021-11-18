@@ -26,6 +26,7 @@
     "postcss-preset-env": "^6.7.0",
     "pug": "^3.0.2",
     "pug-loader": "^2.4.0",
+    "resolve-url-loader": "^4.0.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "webpack": "^5.56.0",
@@ -33,6 +34,8 @@
     "webpack-dev-server": "^4.3.0"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^9.0.1"
+    "copy-webpack-plugin": "^9.0.1",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.1"
   }
 }

@@ -1,9 +1,9 @@
-const myMenu = (( doc ) => {
+const myMenu = () => {
 
-	const topBar 			= doc.getElementById('top-bar'),
-				iconMenu 		= doc.getElementById('icon-menu'),
-				mainNav 		= doc.getElementById('main-nav'),
-				loginButton = doc.getElementById('login-button');
+	const topBar 			= document.getElementById('top-bar'),
+				iconMenu 		= document.getElementById('icon-menu'),
+				mainNav 		= document.getElementById('main-nav'),
+				loginButton = document.getElementById('login-button');
 	
 	iconMenu.addEventListener('click', ( event ) => {
 
@@ -23,6 +23,11 @@ const myMenu = (( doc ) => {
 
 	});
 
-})( document );
+};
 
+myMenu()
+
+export {
+	myMenu
+}
 

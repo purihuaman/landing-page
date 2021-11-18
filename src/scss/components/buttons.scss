@@ -7,6 +7,11 @@
 	margin-bottom: 5rem;
 }
 
+.button-container {
+	width: 100%;
+	text-align: center;
+}
+
 .button {
 	background: none;
 	border: none;
@@ -15,7 +20,7 @@
 	border-radius: 8px;
 	font-weight: 300;
 	cursor: pointer;
-	width: 100%;
+	color: #fff;
 
 	&--purple {
 		background-color: var(--soft-blue);
@@ -26,5 +31,10 @@
 		background-color: var(--dirt-white);
 		color: var(--very-dark-blue);
 		box-shadow: 5px 5px 15px #ccc;
+	}
+
+	&--red {
+		background-color: var(--soft-red);
+		width: 100%;
 	}
 }

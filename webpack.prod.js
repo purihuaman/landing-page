@@ -22,15 +22,19 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: { publicPath: path.relative(__dirname, '') }
+					},
 					"css-loader",
 					"postcss-loader",
 					"sass-loader",
 				],
 			},
 			{
-				test: /\.(png|jpe?g|gif|webp|svg)$/,
-				use: [ 'file-loader' ]
+				test: /\.(png|jpe?g|gif|webp|svg)$/i,
+				type: 'asset/resource',
+				generator: { filename: './src/assets/image/[name].[ext]' },
 			}
 		],
 	},
@@ -54,6 +58,6 @@ module.exports = {
 	output: {
 		clean: true,
 		path: path.join( basePath, publicPath),
-		filename: "js/scripts.js"
+		filename: "js/scripts.js",
 	}
 }

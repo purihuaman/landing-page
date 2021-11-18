@@ -1,5 +1,5 @@
-import style from "./styles.scss"
+import style from './styles.scss'
+
+import './js/scripts.js'
 
 
-import myMenu from './js/app';
-import tabs from './js/tabs';

@@ -51,21 +51,24 @@ html(lang="es")
 							img(src="./assets/image/illustration-features-tab-1.svg", alt="").tabs_img
 						h2.tabs__title Bookmark in one click
 						p.tabs__text Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how your manage your favourite sites.
-						button.button.button--purple More Info
+						.button-container
+							button.button.button--purple More Info
 
 					article.tabs__content
 						.tabs__img--container
 							img(src="./assets/image/illustration-features-tab-2.svg", alt="").tabs_img
 						h2.tabs__title Intelligent search
 						p.tabs__text Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-						button.button.button--purple More Info
+						.button-container
+							button.button.button--purple More Info
 					
 					article.tabs__content
 						.tabs__img--container
 							img(src="./assets/image/illustration-features-tab-3.svg", alt="").tabs_img
 						h2.tabs__title Share your bookmarks
 						p.tabs__text Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
-						button.button.button--purple More Info
+						.button-container
+							button.button.button--purple More Info
 
 			section#download.section.section--third
 				h2.section__subtitle Download the extension
@@ -101,39 +104,47 @@ html(lang="es")
 			section#faqs.section.section--fourth
 				h2.section__subtitle Frenquently asked Questions
 				p.section__text Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
-				.accordion
+				.accordion#accordion
 					.accordion__item
-						.accordion__header
-							h3.accordion__title What is Bookmark
-							img(src="./assets/image/icon-arrow.svg", alt="").accordion__image
-
-						p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
+						h3.accordion__title What is Bookmark
+						.accordion__text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
 
 					.accordion__item
 						h3.accordion__title How can I request a new browser?
-						p.accordion__text Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies no ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+						.accordion__text
+							p Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies no ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
 
 					.accordion__item
 						h3.accordion__title What is Bookmark
-						p.accordion__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
-
-					button.button More info
+						.accordion__text
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae quia omnis? Eveniet exercitationem recusandae, libero laborum veritatis sequi corrupti.
+					.accordion__item
+						h3.accordion__title What about other Chromium browsers?
+						.accordion__text
+							p Integer codimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae vitae neque eget nist gravida pellentesque non ut velit
+				.button-container
+					button.button.button--purple More info
 
 		footer.footer
-			h3.footer__title
-			p.footer__text
+			h3.footer__title 35,000+ already joined
+			p.footer__subtitle Stay up-to-date with what we're doing
 			form(action="#").form#form
-				input(type="email" placeholder='Enter your email address').form__input
-				button.button Contact Us
+				.form__field
+					input(type="email" placeholder='Enter your email address').form__input
+					span.form__img
+				button.button.button--red Contact Us
 
-		//- nav.footer-nav.nav
-		//- 	.logo
-		//- 		img(src="", alt="").logo__img
-		//- 	ul.main-menu
-		//- 		li.main-menu__item: a(href="#features")  Features
-		//- 		li.main-menu__item: a(href="#faqs")  FAQS
-		//- 		li.main-menu__item: a(href="#contact")  Contact
-		//- 	.social-networks
-		//- 		a(href="#"): i.fa.fa-facebook
-		//- 		a(href="#"): i.fa.fa-twitter
+		nav.footer__menu
+			.logo
+				img(src="./assets/image/logo-bookmark.svg", alt="").logo__img
+			ul.footer-menu
+				li.footer-menu__item.footer-menu__item--border-none: a(href="#features").footer-menu__link  Features
+				li.footer-menu__item.footer-menu__item--border-none: a(href="#faqs").footer-menu__link  FAQS
+				li.footer-menu__item.footer-menu__item--border-none: a(href="#contact").footer-menu__link  Contact
+			.social-icons
+				a(href="#")
+					img(src="./assets/image/icon-facebook.svg", alt="").social-icons__img
+				a(href="#")
+					img(src="./assets/image/icon-twitter.svg", alt="").social-icons__img
 
