@@ -13,6 +13,10 @@
 		font-weight: 400;
 		color: var(--grayish-blue);
 		margin-bottom: 2rem;
+
+		&--first {
+			text-align: left;
+		}
 	}
 
 	&--first {
@@ -30,13 +34,33 @@
 			background-color: var(--soft-blue);
 			border-bottom-left-radius: 100px;
 		}
-	}
 
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+
+			& .section__item:last-child {
+				width: 500px;
+			}
+		}
+	}
+	
 	&--second {
 		position: relative;
 	}
-
+	
 	&--third {
 		margin: 0 2rem;
+
+		& div {
+
+			@media screen and (min-width: 768px) {
+				display: grid;
+				justify-content: center;
+				grid-template-columns: repeat(3, auto);
+			}
+		}
 	}
+
 }

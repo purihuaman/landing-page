@@ -4,4 +4,14 @@
 	align-items: center;
 	width: 100%;
 	padding: 1rem;
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 50% 50%;
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		background-color: var(--dirt-white);
+		z-index: 1000;
+	}
 }

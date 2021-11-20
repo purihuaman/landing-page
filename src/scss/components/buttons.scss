@@ -32,6 +32,17 @@
 		color: var(--very-dark-blue);
 		box-shadow: 5px 5px 15px #ccc;
 	}
+	
+	&--purple,
+	&--white {
+		&:hover {
+			color: var(--soft-blue);
+			background-color: transparent;
+			transition: box-shadow .3s;
+			box-shadow: 0 0 0 2px var(--soft-blue);
+		}
+
+	}
 
 	&--red {
 		background-color: var(--soft-red);

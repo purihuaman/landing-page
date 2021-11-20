@@ -2,7 +2,7 @@
 	width: 100%;
 	background: none;
 	border: none;
-	padding: 1rem 0;
+	padding: 1rem;
 	color: var(--white);
 	border: 1px solid var(--grayish-blue);
 	outline: none;
@@ -11,4 +11,11 @@
 	letter-spacing: 3px;
 	font-size: 1.3rem;
 	cursor: pointer;
+
+	@media screen and (min-width: 768px) {
+		--white: var(--soft-red);
+		border-color: inherit;
+		font-size: 1rem;
+		padding: .8rem 1rem;
+	}
 }

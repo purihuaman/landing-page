@@ -20,9 +20,15 @@
 		align-items: center;
 		background-color: var(--very-dark-blue);
 		padding: 2rem;
-		
+
 		& .logo {
 			filter: invert(1) brightness(100);
+		}
+
+		@media screen and (min-width: 768px) {
+			display: grid;
+			justify-items: space-between;
+			grid-template-columns: repeat(2, auto) 1fr;
 		}
 	}
 

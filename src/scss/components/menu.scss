@@ -19,6 +19,17 @@
 	&--active {
 		transform: translateY(0);
 	}
+
+	@media screen and (min-width: 768px) {
+		position: initial;
+		flex-direction: row;
+		gap: .5rem;
+		height: auto;
+		z-index: 100;
+		transform: translateY(0);
+		background-color: transparent;
+		padding: 0;
+	}
 }
 
 .main-menu,
@@ -46,6 +57,17 @@
 		&--border-none:last-child {
 			border: none;
 		}
+		@media screen and (min-width: 768px) {
+			border: none;
+			margin: 0;
+			flex: auto;
+
+			&:last-child {
+				border: none;
+				margin: 0;
+			}
+		}
+
 	}
 
 	&__link {
@@ -55,5 +77,23 @@
 		letter-spacing: 3px;
 		font-weight: 300;
 		font-size: 1.3rem;
+		
+		@media screen and (min-width: 768px) {
+			color: var(--very-dark-blue);
+			font-size: 1.1rem;
+			font-weight: 400;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.footer-menu {
+
+	&__link {
+		color: #fff;
 	}
 }
